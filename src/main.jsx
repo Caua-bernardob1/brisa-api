@@ -65,7 +65,7 @@ function App() {
 
   return <div className="app-shell">
     <aside className={`sidebar ${menuOpen ? 'is-open' : ''}`}>
-      <a href="#" className="brand" aria-label="Brisa, página inicial" onClick={e => { e.preventDefault(); setView('all'); }}><span className="brand-icon"><Wind size={25}/></span>brisa<span className="brand-dot">.</span></a>
+      <a href="/" className="brand" aria-label="Brisa, voltar ao início"><span className="brand-icon"><Wind size={25}/></span>brisa<span className="brand-dot">.</span></a>
       <div className="nav-label">SEU DIA, MAIS LEVE</div>
       <nav aria-label="Navegação principal">
         <button className={view === 'all' ? 'nav-item active' : 'nav-item'} onClick={() => { setView('all'); setMenuOpen(false); }}><LayoutGrid size={18}/> Visão geral <span>{cities.length}</span></button>

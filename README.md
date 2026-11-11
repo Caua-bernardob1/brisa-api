@@ -23,3 +23,10 @@ pnpm dev
 - Layout responsivo e controles acessíveis por teclado.
 
 Os dados são consultados no navegador. É necessária conexão com a internet. A geocodificação usa `geocoding-api.open-meteo.com/v1/search`; o clima usa `api.open-meteo.com/v1/forecast`. Consulte os termos da [Open-Meteo](https://open-meteo.com/en/terms) antes de uso comercial.
+
+## Páginas
+
+- `/`: página inicial com a imagem do pátio e o botão Vamos começar.
+- `/app.html`: aplicativo de clima completo. O logo Brisa retorna ao início.
+
+A imagem fornecida foi otimizada em WebP para reduzir o tempo de carregamento.
