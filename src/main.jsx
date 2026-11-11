@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { Wind, Search, Plus, ArrowUpRight, ArrowRight, Star, MapPin, LayoutGrid, Sun, CloudSun, Cloud, CloudRain, CloudLightning, CloudSnow, CloudFog, Droplets, RefreshCw, X, Compass, Check, AlertCircle, Menu } from 'lucide-react';
 import { initialCities, condition, fetchWeather, searchCities, temperature } from './weather';
 import './styles.css';
+import './palette.css';
 
 const weatherIcons = { sun: Sun, partly: CloudSun, cloud: Cloud, rain: CloudRain, storm: CloudLightning, snow: CloudSnow, fog: CloudFog };
 function WeatherIcon({ code, ...props }) { const Icon = weatherIcons[condition(code).icon]; return <Icon {...props} />; }

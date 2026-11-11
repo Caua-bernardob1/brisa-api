@@ -1,0 +1,104 @@
+/* Paleta da referência: Volcanic Slag, Alpine Ice, Lichen Green, Summit Stone. */
+:root {
+  --volcanic: #3d3d3d;
+  --ice: #ebecee;
+  --lichen: #c4e326;
+  --stone: #8a8c8f;
+  --surface: #f7f7f8;
+  --line: #d6d7d9;
+  --muted: #66686b;
+  color: var(--volcanic);
+  background: var(--ice);
+}
+button:focus-visible,a:focus-visible { outline-color: var(--volcanic); }
+.sidebar { background: var(--volcanic); border-color: #505050; color: var(--ice); }
+.brand-icon { background: var(--lichen); color: var(--volcanic); }
+.brand-dot,.note-icon { color: var(--lichen); }
+.nav-label,.sidebar-bottom { color: #b7b8ba; }
+.nav-item { color: #c5c6c8; }
+.nav-item span { color: #b7b8ba; }
+.nav-item:hover { background: #494949; }
+.nav-item.active { background: var(--lichen); color: var(--volcanic); }
+.nav-item.active svg,.nav-item.active span { color: var(--volcanic); }
+.sidebar-note { background: #454545; border-color: #595959; }
+.sidebar-note p { color: #c5c6c8; }
+.note-line { border-color: var(--lichen); }
+.live-dot,.eyebrow>span { background: var(--lichen); box-shadow: 0 0 0 3px #c4e32618; }
+.topbar { background: var(--ice); border-color: var(--line); }
+.topbar-heading,.date-label,.eyebrow,.page-heading p,.live-label { color: var(--muted); }
+.unit-switch { background: var(--surface); border-color: var(--line); }
+.unit-switch button { color: var(--muted); }
+.unit-switch .selected { background: var(--volcanic); color: var(--lichen); }
+.add-button { background: var(--lichen); border-color: var(--lichen); color: var(--volcanic); }
+.add-button:hover { background: #bdd51e; border-color: #bdd51e; }
+.search-wrap input { background: var(--surface); border-color: var(--line); color: var(--volcanic); }
+.search-wrap input::placeholder,.search-icon,.clear-search { color: var(--muted); }
+.search-wrap input:focus { border-color: var(--volcanic); box-shadow: 0 0 0 3px #c4e32645; }
+.search-results { background: var(--surface); border-color: var(--line); box-shadow: 0 15px 35px #3d3d3d18; }
+.search-results>p,.search-results>button,.search-results small { color: var(--muted); }
+.search-results strong { color: var(--volcanic); }
+.search-results>button:hover { background: #c4e32630; }
+.section-title h2>span { background: var(--volcanic); color: var(--ice); }
+.refresh-button { color: var(--muted); }
+.refresh-button:hover { color: var(--volcanic); }
+.city-card,.city-card.sunny,.city-card.cloudy,.city-card.rainy { background: var(--surface); border-color: var(--line); }
+.city-select:hover { background: #3d3d3d04; }
+.city-card.city-selected { background: var(--volcanic); border-color: var(--volcanic); color: var(--ice); box-shadow: inset 0 3px 0 var(--lichen); }
+.city-country,.condition { color: var(--muted); }
+.favorite-button { color: var(--stone); }
+.favorite-button.is-favorite { color: var(--volcanic); }
+.favorite-button:hover { color: #65720e; }
+.weather-symbol,.cloudy .weather-symbol,.rainy .weather-symbol { color: var(--stone); filter: none; }
+.sunny .weather-symbol { color: #67740f; }
+.card-bottom { border-color: var(--line); color: var(--volcanic); }
+.low,.humidity { color: var(--muted); }
+.city-selected .city-country,.city-selected .condition,.city-selected .low,.city-selected .humidity { color: #c5c6c8; }
+.city-selected .card-bottom { color: var(--ice); border-color: #626262; }
+.city-selected .favorite-button { color: #b7b8ba; }
+.city-selected .favorite-button.is-favorite,.city-selected .favorite-button:hover,.city-selected .weather-symbol { color: var(--lichen); }
+.add-city-card { background: transparent; border-color: #b9bbbe; }
+.add-city-card>span { background: var(--lichen); color: var(--volcanic); border-color: var(--lichen); }
+.add-city-card strong { color: var(--volcanic); }
+.add-city-card small { color: var(--muted); }
+.add-city-card:hover { background: #c4e32620; border-color: var(--stone); }
+.explore-note { background: var(--lichen); border-color: var(--lichen); color: var(--volcanic); }
+.explore-note strong,.explore-note p,.explore-note>svg { color: var(--volcanic); }
+.details-panel { background: var(--volcanic); border-color: var(--volcanic); color: var(--ice); }
+.detail-topline { color: var(--lichen); }
+.detail-country,.detail-country span { color: #c5c6c8; }
+.scene-sun { background: var(--lichen); box-shadow: 0 0 32px 10px #c4e32615; }
+.scene-orbit { border-color: #c4e32618; }
+.scene-spark { color: var(--lichen); }
+.scene-cloud { color: var(--stone); filter: drop-shadow(0 6px 8px #25252525); }
+.rainy .scene-sun,.cloudy .scene-sun { opacity: .75; }
+.detail-weather sup,.detail-weather p,.detail-weather>span { color: #c5c6c8; }
+.detail-metrics { background: #474747; border-color: #5d5d5d; }
+.detail-metrics>div { color: var(--lichen); }
+.detail-metrics>div+div { border-color: #626262; }
+.detail-metrics span,.detail-metrics small { color: #c5c6c8; }
+.detail-metrics strong { color: var(--ice); }
+.forecast-heading>span { color: #b7b8ba; }
+.forecast-list li { border-color: #555555; }
+.forecast-day,.forecast-temp { color: var(--ice); }
+.forecast-list li:first-child .forecast-day { color: var(--lichen); }
+.rain-chance,.forecast-temp>span { color: #bfc1c3; }
+.forecast-icon,.forecast-icon.cloudy,.forecast-icon.rainy { color: var(--stone); }
+.forecast-icon.sunny { color: var(--lichen); }
+.details-bottom { background: #454545; border-color: #5a5a5a; color: #c5c6c8; }
+footer { border-color: var(--line); color: var(--muted); }
+footer a { color: var(--volcanic); }
+.footer-dot { color: var(--stone); }
+.skeleton { background-image: linear-gradient(100deg,#d6d7d9 30%,#ebecee 45%,#d6d7d9 60%); }
+.city-selected .skeleton,.details-panel .skeleton { background-image: linear-gradient(100deg,#555555 30%,#686868 45%,#555555 60%); }
+.card-loading>span,.card-error,.card-error>span,.card-error>small { color: var(--muted); }
+.city-selected .card-loading>span,.city-selected .card-error,.city-selected .card-error>span,.city-selected .card-error>small { color: #c5c6c8; }
+.card-retry { color: var(--volcanic); }
+.city-selected .card-retry { color: var(--lichen); }
+.detail-placeholder { color: var(--lichen); }
+.detail-placeholder p { color: #c5c6c8; }
+.empty-state { background: var(--surface); border-color: var(--line); color: var(--stone); }
+.empty-state h3,.empty-state button { color: var(--volcanic); }
+.empty-state p { color: var(--muted); }
+.mobile-menu.icon-button { color: var(--volcanic); }
+.sidebar :is(button,a):focus-visible { outline-color: var(--lichen); }
+@media(max-width:700px) { .sidebar { box-shadow: 20px 0 60px #3d3d3d30; } }
